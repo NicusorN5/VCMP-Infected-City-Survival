@@ -180,11 +180,11 @@ class Zombie //Zombie class. No need for the type field since it's specified by 
 	constructor(pos)
 	{
 		local type = rand() % 4;
-		Object = CreateObject(GetZombieSkinType_FirstFrame(type),0,pos,255);
-		Name = GetZombieNameType(type);
-		Health = GetZombieHealthType(type);
-		Damage = GetZombieDMGType(type);
-		Movement = GetZombieMOVType(type);
+		Object = ::CreateObject(GetZombieSkinType_FirstFrame(type),0,pos,255);
+		Name = ::GetZombieNameType(type);
+		Health = ::GetZombieHealthType(type);
+		Damage = ::GetZombieDMGType(type);
+		Movement = ::GetZombieMOVType(type);
 		Frame = 0;
 	}
 	Object = -1;
