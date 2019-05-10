@@ -9,10 +9,12 @@ class SPlayer //SPlayer stands for Server-Player. What a creative name
 	Inventory = array(60,-1); //inventory items. ID is model ID.
 	Cars = array(5,-1);
 	Password = "";
+	Logged = false;
 	Hunger = 0;
 	Thirst = 0;
 	IP = "";
 	Infected = false;
+	AdminLevel = 0;
 }
 function SPlayer::GetInstance()
 {
@@ -20,15 +22,15 @@ function SPlayer::GetInstance()
 } 
 function SPlayer::Load() //called when player joins. Supposed to load it's data: inventory, cars, stuff like that.
 {
-	
+	///TODO: Load player stats.
 }
 function SPlayer::Register() //called if player is new.
 {
-	
+	//TODO: Create player account.
 }
 function SPlayer::Login() //called if an player joins but with a different IP.
 {
-	
+	//TODO: Login the player.
 }
 function SPlayer::UpdateM() //UpdateM - Update every Minute
 {
@@ -43,6 +45,16 @@ function SPlayer::Kill()
 	local player = this.GetInstance();
 	player.Health =0;
 	player.Eject();
+}
+function SPlayer::AdminN()
+{
+	switch(this.AdminLevel)
+	{
+		case 1:	return "Moderator";
+		case 2:	return "Admin";
+		case 3:	return "Developer";
+		default: return null;
+	}
 }
 function SPlayer::SaveStats()
 {

@@ -1,6 +1,8 @@
 //Include section:
-dofile("scripts/map_editor.nut",true);
-dofile("scripts/structs.nut",true);
+dofile("scripts/structs.nut",true); //Data structures.
+dofile("scripts/consts.nut",true); //Constant values.
+dofile("scripts/cmds.nut",true); // Server commands and client-side <-> server-side stuff.
+dofile("scripts/map_editor.nut",true); //Map editor script.
 //Enums section:
 
 //Constants section:
@@ -16,7 +18,20 @@ function onServerStop()
 
 function onScriptLoad()
 {
-	SetServerName("[0.4]Infected City Survial");
+	SetServerName("[0.4]Infected City Survial 0.0.1 development pre-alpha testing");
+	SetDeathMessages(false);
+	SetDisableDriveby(false);
+	SetFastSwitch(false);
+	SetFrameLimiter(true);
+	SetFriendlyFire(true);
+	SetGameModeName("Infected City 0.0a");
+	SetTimeRate(1000);
+	SetJoinMessages(false);
+	SetJumpSwitch(false);
+	SetKillDelay(255);
+	SetServerPassword("cod modern warfare 3");
+	SetShowOnlyTeamMarkers(true);
+	SetShootInAir(true);
 	//TODO: Password, load map, and store data.
 }
 
@@ -26,10 +41,14 @@ function onScriptUnload()
 
 function onPlayerJoin( player )
 {
+	PLAYERS[player.ID ] = SPlayer(player);
+	PLAYERS[player.ID].Load();
 }
 
 function onPlayerPart( player, reason )
 {
+	PLAYERS[player.ID].SaveStats();
+	PLAYERS[player.ID] = null;
 }
 
 function onPlayerRequestClass( player, classID, team, skin )
@@ -61,11 +80,6 @@ function onPlayerTeamKill( player, killer, reason, bodypart )
 function onPlayerChat( player, text )
 {
 	print( player.Name + ": " + text );
-	return 1;
-}
-
-function onPlayerCommand( player, cmd, text )
-{
 	return 1;
 }
 
@@ -139,10 +153,6 @@ function onPlayerGameKeysChange( player, oldKeys, newKeys )
 }
 
 function onPlayerUpdate( player, update )
-{
-}
-
-function onClientScriptData( player )
 {
 }
 
