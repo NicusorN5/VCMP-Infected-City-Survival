@@ -32,7 +32,7 @@ function CleanMap()
 		if(FindPickup(i)) FindPickup(i).Delete();
 		if(FindVehicle(i)) FindVehicle(i).Delete();
 		if(FindCheckpoint(i)) FindCheckpoint(i).Delete();
-		if(FindMarker(i)) DestroyMarker(i);
+		DestroyMarker(i);
 	}
 }
 function CreateMapItem(type,player,...) 
@@ -42,7 +42,11 @@ function CreateMapItem(type,player,...)
 	if(type < 0 && type > 5) return -2; //Type is 'Out Of Range'
 	switch(type)
 	{
-		case ObjectTypes.NoEntity: return 1 ; //OK.
+		case ObjectTypes.NoEntity:
+		{
+			MessagePlayer("No entity was created.",player);
+			return 1 ; //OK.
+		}
 		case ObjectTypes.Obj: //create object. 
 		{
 			local model = vargv[0];
@@ -53,6 +57,7 @@ function CreateMapItem(type,player,...)
 			if(!ID) return 0; // Unkonwn error.
 			MAP_EDIT_OBJECTID = ID;
 			MAP_EDIT_OBJT = type;
+			MessagePlayer("Created object.",player);
 			return 1;
 		}
 		case ObjectTypes.Pickup: //create pickup. 
@@ -61,11 +66,11 @@ function CreateMapItem(type,player,...)
 			local quantity = vargv[1];
 			local alpha = vargv[2];
 			if(vargv[2] == null) return -3; 
-			local obj = CreatePickup(model,player.World,quantity,player.Pos,alpha);
-			local ID = obj.ID;
+			local ID = CreatePickup(model,player.World,quantity,player.Pos,alpha).ID;;
 			if(!ID) return 0;
 			MAP_EDIT_OBJECTID = ID;
 			MAP_EDIT_OBJT = type;
+			MessagePlayer("Created pickup.",player);
 			return 1;
 		}
 		case ObjectTypes.CheckPoint: //create checkpoint. 
@@ -80,6 +85,7 @@ function CreateMapItem(type,player,...)
 			if(!ID) return 0; // Unkonwn error.
 			MAP_EDIT_OBJECTID = ID;
 			MAP_EDIT_OBJT = type;
+			MessagePlayer("Created checkpoint.",player);
 			return 1;
 		}
 		case ObjectTypes.Car:
@@ -88,11 +94,27 @@ function CreateMapItem(type,player,...)
 			local c1 = vargv[1];
 			local c2 = vargv[2];
 			if(vargv[0] == null) return -3;
-			local car = CreateVehicle(model,world,pos,player.Angle,c1,c2);
+			local car = CreateVehicle(model,player.World,pos,player.Angle,c1,c2);
+			local ID = car.ID;
 			if(!ID) return 0;
 			MAP_EDIT_OBJECTID = ID;
 			MAP_EDIT_OBJT = type;
+			MessagePlayer("Created car.",player);
 			return 1;
+		}
+		default:
+		{
+			return -2;
+		}
+	}
+}
+function Undo()
+{
+	for(local i =0 ; i < 3000;i++)
+	{
+		switch(MAP_EDIT_OBJT)
+		{
+			default:return false; //failure
 		}
 	}
 }

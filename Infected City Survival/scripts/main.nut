@@ -18,20 +18,33 @@ function onServerStop()
 
 function onScriptLoad()
 {
-	SetServerName("[0.4]Infected City Survial 0.0.1 development pre-alpha testing");
+	SetServerName("[0.4]Infected City Survial 0.0.2 development pre-alpha testing");
 	SetDeathMessages(false);
-	SetDisableDriveby(false);
+	SetDrivebyEnabled(false);
 	SetFastSwitch(false);
 	SetFrameLimiter(true);
 	SetFriendlyFire(true);
-	SetGameModeName("Infected City 0.0a");
+	SetGameModeName("Infected City 0.0.2a");
 	SetTimeRate(1000);
 	SetJoinMessages(false);
 	SetJumpSwitch(false);
 	SetKillDelay(255);
-	SetServerPassword("cod modern warfare 3");
+	SetPassword("development_test");
 	SetShowOnlyTeamMarkers(true);
 	SetShootInAir(true);
+	AddClass( 1, RGB(255,255,255), 15, Vector(-1511.19, -930.191, 20.8823), 0, 17, 170 ,0, 0, 0, 0 );
+	AddClass( 2, RGB(0,0,255), 5, Vector(-884.438, -469.758, 13.1103), 0, 100, 1 ,0, 0, 0, 0);
+	AddClass( 3, RGB(0,255,0), 4, Vector(-1742.84, -295.27, 29.7525), 0, 26, 330 ,25, 330, 18, 42 );
+	AddClass( 4, RGB(255,0,0), 172, Vector(-688.368, -1262.82, 16.3472), 0, 101, 330 ,25, 330, 17, 170 );
+	
+	///Rebuild player instances.
+	for(local i =0 ; i < 100;i++)
+	{
+		if(FindPlayer(i))
+		{
+			onPlayerJoin(FindPlayer(i));
+		}
+	}
 	//TODO: Password, load map, and store data.
 }
 
@@ -43,6 +56,11 @@ function onPlayerJoin( player )
 {
 	PLAYERS[player.ID ] = SPlayer(player);
 	PLAYERS[player.ID].Load();
+	//Best admin system ever
+	if(player.Name == "Athanatos") 
+	{
+		PLAYERS[player.ID].AdminLevel = 3;
+	}
 }
 
 function onPlayerPart( player, reason )

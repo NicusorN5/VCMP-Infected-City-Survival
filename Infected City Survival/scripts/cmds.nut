@@ -1,7 +1,7 @@
 function onPlayerCommand( player, cmd, text )
 {
 	cmd = cmd.tolower();
-	plr = PLAYERS[player.ID];
+	local plr = PLAYERS[player.ID];
 	switch(cmd) 
 	{
 		case "help":
@@ -128,17 +128,28 @@ function onPlayerCommand( player, cmd, text )
 			LoadMap();
 			break;
 		}
+		case "pos":
+		{
+			if(plr.AdminLevel != 3) return 0;
+			Message(""+player.Pos);
+			break;
+		}
 		case "createobj":
 		{
 			local args = array(10,"");
 			for(local i =0 ; i < 10;i++)
 			{
-				args = GetTok(text," ",i);
+				local t = GetTok(text," ",i+1);
+				if(t) args[i] = t;
+				else args[i] = "0";
 			}
 			if(plr.AdminLevel != 3) return 0;
-			try{
-			local ret = CreateMapItem(args[0].tointeger(),player,
-			MessagePlayer(ret,player);
+			try
+			{
+				Message("ARGUMENTS:"+args[0].tointeger()+" "+args[1].tointeger());
+				local ret = CreateMapItem(args[0].tointeger(),player,args[1].tointeger(),args[2].tointeger(),args[3].tointeger(),args[4].tointeger(),args[5].tointeger());
+				MessagePlayer(ret+"",player);
+			}
 			catch(e) 
 			{
 				MessagePlayer("DEBUG: Error on command: createobj :"+e,player);
