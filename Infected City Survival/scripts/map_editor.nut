@@ -1,10 +1,14 @@
 MAP_FILE <- "Map.nut";
 
 dofile(MAP_FILE,true);
-try{
-Map();
+try
+{
+	Map();
 }
-catch(e) { print("<WARNING>Map doesnt exist.")}
+catch(e) 
+{
+	print("<WARNING>Map doesnt exist.");
+}
 
 MAP_EDIT_PLR <- -1; //Propably won't be used...
 MAP_EDIT_OBJECTID <- -1;
@@ -29,7 +33,7 @@ function CleanMap()
 	for(local i =0; i < 5000; i++)
 	{
 		if(FindObject(i)) FindObject(i).Delete();
-		if(FindPickup(i)) FindPickup(i).Delete();
+		if(FindPickup(i)) FindPickup(i).Remove();
 		if(FindVehicle(i)) FindVehicle(i).Delete();
 		if(FindCheckpoint(i)) FindCheckpoint(i).Delete();
 		DestroyMarker(i);
@@ -66,7 +70,7 @@ function CreateMapItem(type,player,...)
 			local quantity = vargv[1];
 			local alpha = vargv[2];
 			if(vargv[2] == null) return -3; 
-			local ID = CreatePickup(model,player.World,quantity,player.Pos,alpha).ID;;
+			local ID = CreatePickup(model,player.World,quantity,player.Pos,alpha,true).ID;
 			if(!ID) return 0;
 			MAP_EDIT_OBJECTID = ID;
 			MAP_EDIT_OBJT = type;
@@ -108,15 +112,61 @@ function CreateMapItem(type,player,...)
 		}
 	}
 }
-function Undo()
+function MoveMapItem(x,y,z)
 {
-	for(local i =0 ; i < 3000;i++)
+	switch(MAP_EDIT_OBJT)
 	{
-		switch(MAP_EDIT_OBJT)
+		case ObjectTypes.Obj:
 		{
-			default:return false; //failure
+			FindObject(MAP_EDIT_OBJECTID).Pos += Vector(x,y,z);
+			break;
 		}
+		case ObjectTypes.Pickup:
+		{
+			FindPickup(MAP_EDIT_OBJECTID).Pos += Vector(x,y,z);
+			break;
+		}
+		case ObjectTypes.CheckPoint:
+		{
+			FindCheckpoint(MAP_EDIT_OBJECTID).Pos += Vector(x,y,z); //chances this won't work :p
+			break;
+		}
+		case ObjectTypes.Car:
+		{
+			FindVehicle(MAP_EDIT_OBJECTID).Pos += Vector(x,y,z);
+			break;
+		}
+		default: return 0; //no object created.
 	}
+	return 1; //object was succesfully moved!
+}
+function UndoMapItem()
+{
+	switch(MAP_EDIT_OBJT)
+	{
+		case ObjectTypes.Obj:
+		{
+			FindObject(MAP_EDIT_OBJECTID).Delete();
+			break;
+		}
+		case ObjectTypes.Pickup:
+		{
+			FindPickup(MAP_EDIT_OBJECTID).Delete();
+			break;
+		}
+		case ObjectTypes.CheckPoint:
+		{
+			FindCheckpoint(MAP_EDIT_OBJECTID).Delete(); //chances this won't work too
+			break;
+		}
+		case ObjectTypes.Car:
+		{
+			FindVehicle(MAP_EDIT_OBJECTID).Delete();
+			break;
+		}
+		default:return 0; //no object to be deleted.
+	}
+	return 1; //object was succesfully deleted!
 }
 function SaveMap()
 {

@@ -23,7 +23,7 @@ function onScriptLoad()
 	SetDrivebyEnabled(false);
 	SetFastSwitch(false);
 	SetFrameLimiter(true);
-	SetFriendlyFire(true);
+	SetFriendlyFire(false);
 	SetGameModeName("Infected City 0.0.2a");
 	SetTimeRate(1000);
 	SetJoinMessages(false);
@@ -32,10 +32,11 @@ function onScriptLoad()
 	SetPassword("development_test");
 	SetShowOnlyTeamMarkers(true);
 	SetShootInAir(true);
+	SetWallglitch(true);
 	AddClass( 1, RGB(255,255,255), 15, Vector(-1511.19, -930.191, 20.8823), 0, 17, 170 ,0, 0, 0, 0 );
 	AddClass( 2, RGB(0,0,255), 5, Vector(-884.438, -469.758, 13.1103), 0, 100, 1 ,0, 0, 0, 0);
 	AddClass( 3, RGB(0,255,0), 4, Vector(-1742.84, -295.27, 29.7525), 0, 26, 330 ,25, 330, 18, 42 );
-	AddClass( 4, RGB(255,0,0), 172, Vector(-688.368, -1262.82, 16.3472), 0, 101, 330 ,25, 330, 17, 170 );
+	AddClass( 4, RGB(255,0,0), 172, Vector(-688.368, -1262.82, 16.3472), 0, 101, 330 ,102, 350, 103, 220 );
 	
 	///Rebuild player instances.
 	for(local i =0 ; i < 100;i++)

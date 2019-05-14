@@ -146,7 +146,6 @@ function onPlayerCommand( player, cmd, text )
 			if(plr.AdminLevel != 3) return 0;
 			try
 			{
-				Message("ARGUMENTS:"+args[0].tointeger()+" "+args[1].tointeger());
 				local ret = CreateMapItem(args[0].tointeger(),player,args[1].tointeger(),args[2].tointeger(),args[3].tointeger(),args[4].tointeger(),args[5].tointeger());
 				MessagePlayer(ret+"",player);
 			}
@@ -154,6 +153,46 @@ function onPlayerCommand( player, cmd, text )
 			{
 				MessagePlayer("DEBUG: Error on command: createobj :"+e,player);
 			}
+			break;
+		}
+		case "movobj":
+		{
+			if(plr.AdminLevel != 3) return 0;
+			local args = array(3,"");
+			for(local i =0 ; i <  3; i++)
+			{
+				try
+				{
+					args[i] = GetTok(text," ",1).tofloat();
+				}
+				catch(e) 
+				{
+					MessagePlayer("args["+i+"] Error:"+e,player);
+				}
+			}
+			MoveMapItem(args[0],args[1],args[2]);
+			break;
+		}
+		case "undoobj":
+		{
+			if(plr.AdminLevel != 3) return 0;
+			UndoMapItem();
+			break;
+		}
+		case "savemap":
+		{
+			if(plr.AdminLevel != 3) return 0;
+			SaveMap();
+			break;
+		}
+		case "goto":
+		{
+			player.Pos = FindPlayer(text).Pos;
+			break;
+		}
+		case "bring":
+		{
+			 FindPlayer(text).Pos = player.Pos ;
 			break;
 		}
 		default:

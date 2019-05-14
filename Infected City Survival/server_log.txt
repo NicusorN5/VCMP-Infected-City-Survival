@@ -1,0 +1,177 @@
+[MODULE]  Loaded SqVCMP 0.4 frontend by Stormeus. (v1.0)
+[SCRIPT]  <WARNING>Map doesnt exist.
+[SCRIPT]  Athanatos: bruh
+[SCRIPT]  [UFt]5[]570: a
+[SCRIPT]  Athanatos: a trebuit sa dau restart
+[SCRIPT]  [UFt]5[]570: asta e echipa free no /
+[SCRIPT]  [UFt]5[]570: ?
+[SCRIPT]  Athanatos: nu
+[SCRIPT]  [UFt]5[]570: adica
+[SCRIPT]  [UFt]5[]570: omoara
+[SCRIPT]  [UFt]5[]570: pe toti
+[SCRIPT]  [UFt]5[]570: n-are coecipier
+[SCRIPT]  [UFt]5[]570: coechipier
+[SCRIPT]  Athanatos: am dezactivat friendly fireul'
+[SCRIPT]  [UFt]5[]570: aa :D
+[SCRIPT]  [UFt]5[]570: fa exec
+[SCRIPT]  Athanatos: stai sa fac /goti
+[SCRIPT]  Athanatos:   /goto si /bring
+[SCRIPT]  [UFt]5[]570: activeaza wg
+[SCRIPT]  [UFt]5[]570: te rog
+[SCRIPT]  Athanatos: wq = ?
+[SCRIPT]  [UFt]5[]570: WG
+[SCRIPT]  Athanatos: ce e?
+[SCRIPT]  [UFt]5[]570: sa tragem prin pereti
+[SCRIPT]  [UFt]5[]570: ca pe rtv
+[SCRIPT]  Athanatos: wall glitch?
+[SCRIPT]  [UFt]5[]570: da
+[SCRIPT]  [UFt]5[]570: te rog 
+[SCRIPT]  [UFt]5[]570: ba nicu ai ceva de mancare ca mi foame
+[SCRIPT]  Athanatos: wtf
+[SCRIPT]  Athanatos: XD
+[SCRIPT]  [UFt]5[]570: activeaza WG
+[SCRIPT]  [UFt]5[]570: PLES
+[SCRIPT]  <WARNING>Map doesnt exist.
+[MODULE]  Scripts reloaded.
+
+AN ERROR HAS OCCURED [the index 'Pos' does not exist]
+
+CALLSTACK
+*FUNCTION [onPlayerCommand()] scripts/cmds.nut line [190]
+
+LOCALS
+[plr] INSTANCE
+[text] "55"
+[cmd] "goto"
+[player] INSTANCE
+[this] TABLE
+[SCRIPT]  [UFt]5[]570: damn
+
+AN ERROR HAS OCCURED [Unexpected argument in FindPlayer: must be integer or string]
+
+CALLSTACK
+*FUNCTION [onPlayerCommand()] scripts/cmds.nut line [190]
+
+LOCALS
+[plr] INSTANCE
+[text] NULL
+[cmd] "goto"
+[player] INSTANCE
+[this] TABLE
+[SCRIPT]  [UFt]5[]570: goto haa
+[SCRIPT]  Athanatos: NIGGA
+[SCRIPT]  [UFt]5[]570: cea mai blana cvomanda
+[SCRIPT]  [UFt]5[]570: haha
+[SCRIPT]  [UFt]5[]570: activeaqza si wg
+[SCRIPT]  [UFt]5[]570: te eroor
+[SCRIPT]  [UFt]5[]570: te rog baa
+[SCRIPT]  Athanatos: ACR <3
+[SCRIPT]  Athanatos: :c
+[SCRIPT]  [UFt]5[]570: ce ?
+[SCRIPT]  Athanatos: am fost omorat cu arma mrea preferata
+[SCRIPT]  Athanatos: sa bag p90
+[SCRIPT]  Athanatos: la agenti
+[SCRIPT]  [UFt]5[]570: ba
+[SCRIPT]  [UFt]5[]570: activeaaza
+[SCRIPT]  [UFt]5[]570: WG !!!!!!
+[SCRIPT]  [UFt]5[]570: stii cum nu ?
+[SCRIPT]  Athanatos: N I G G A
+[SCRIPT]  [UFt]5[]570: ce ?:
+[SCRIPT]  Athanatos: tre sa ma uit pe vcmp wiki
+[SCRIPT]  [UFt]5[]570: e topic pe forum
+[SCRIPT]  Athanatos: ca nu mai stiu cum sa scriu corect
+[SCRIPT]  Athanatos: comanda
+[SCRIPT]  <WARNING>Map doesnt exist.
+[MODULE]  Scripts reloaded.
+[SCRIPT]  [UFt]5[]570: ala i baa
+[SCRIPT]  Athanatos: multimit?
+[SCRIPT]  [UFt]5[]570: yes
+[SCRIPT]  [UFt]5[]570: au
+[SCRIPT]  Athanatos: fain headshot
+[SCRIPT]  Athanatos: w
+[SCRIPT]  [UFt]5[]570: mz
+[SCRIPT]  [UFt]5[]570: bag pula in apa din jocua st
+[SCRIPT]  Athanatos: uitate la /help
+[SCRIPT]  Athanatos: sa te uiti la cum am explicat gameplayul
+[SCRIPT]  [UFt]5[]570: in romana nu ai ?
+[SCRIPT]  Athanatos: nu
+[SCRIPT]  Athanatos: XD
+[SCRIPT]  [UFt]5[]570: suka
+[SCRIPT]  [UFt]5[]570: spawn kill :v
+[SCRIPT]  Athanatos: ma rog
+[SCRIPT]  [UFt]5[]570: doamne ajuta
+[SCRIPT]  Athanatos: sa mai testez editorul de mapa
+[SCRIPT]  [UFt]5[]570: baga si /stats
+[SCRIPT]  Athanatos: FMM
+[SCRIPT]  Athanatos: nu pot sa testez comanga
+[SCRIPT]  Athanatos: nu pot sa testez comanda
+[SCRIPT]  [UFt]5[]570: o testez euy
+[SCRIPT]  Athanatos: fututi mortii matii
+[SCRIPT]  [UFt]5[]570: o testez eu
+[SCRIPT]  Athanatos: NIGGA
+[SCRIPT]  Athanatos: imi bag pula
+[SCRIPT]  [UFt]5[]570: au
+[SCRIPT]  [UFt]5[]570: ba
+[SCRIPT]  [UFt]5[]570: am o idee faina
+[SCRIPT]  [UFt]5[]570: un server romanesc
+[SCRIPT]  [UFt]5[]570: in stilu rtv
+[SCRIPT]  Athanatos: da fa tu singur
+[SCRIPT]  Athanatos: nu am chef sa ma umplu de proiecte
+[SCRIPT]  [UFt]5[]570: nu stiu sa fac o masina
+[SCRIPT]  [UFt]5[]570: sa se spawneze la anumtie coord
+[SCRIPT]  [UFt]5[]570: sau un checkpoint
+[SCRIPT]  [UFt]5[]570: de captura
+[SCRIPT]  [UFt]5[]570: e greu
+[SCRIPT]  [UFt]5[]570: :(
+[SCRIPT]  Athanatos:  CreateVehicle(model,lume,Vector(x,y,z),unghi,c1,c2)
+[SCRIPT]  [UFt]5[]570: ma ajuti cu ideea ?
+[SCRI
+ Vice City Multiplayer Server
+ -------------------------------
+ v0.4, (c) 2007-2014 VC:MP Team
+
+Loaded plugin: announce04rel32
+
+Loaded plugin: squirrel04rel32
+
+Unable to start server on host:  port: 8192. Port in use?
+
+ Vice City Multiplayer Server
+ -------------------------------
+ v0.4, (c) 2007-2014 VC:MP Team
+
+Loaded plugin: announce04rel32
+
+Loaded plugin: squirrel04rel32
+
+Unable to start server on host:  port: 8192. Port in use?
+
+ Vice City Multiplayer Server
+ -------------------------------
+ v0.4, (c) 2007-2014 VC:MP Team
+
+Loaded plugin: announce04rel32
+
+Loaded plugin: squirrel04rel32
+
+Unable to start server on host:  port: 8192. Port in use?
+
+ Vice City Multiplayer Server
+ -------------------------------
+ v0.4, (c) 2007-2014 VC:MP Team
+
+Loaded plugin: announce04rel32
+
+Loaded plugin: squirrel04rel32
+
+Unable to start server on host:  port: 8192. Port in use?
+
+ Vice City Multiplayer Server
+ -------------------------------
+ v0.4, (c) 2007-2014 VC:MP Team
+
+Loaded plugin: announce04rel32
+
+Loaded plugin: squirrel04rel32
+
+Unable to start server on host:  port: 8192. Port in use?
