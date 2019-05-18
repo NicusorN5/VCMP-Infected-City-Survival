@@ -173,6 +173,24 @@ function onPlayerCommand( player, cmd, text )
 			MoveMapItem(args[0],args[1],args[2]);
 			break;
 		}
+		case "movobjx":
+		{
+			if(plr.AdminLevel != 3) return 0;
+			MoveMapItem(text.tofloat(),0,0);
+			break;
+		}
+		case "movobjy":
+		{
+			if(plr.AdminLevel != 3) return 0;
+			MoveMapItem(0,text.tofloat(),0);
+			break;
+		}
+		case "movobjz":
+		{
+			if(plr.AdminLevel != 3) return 0;
+			MoveMapItem(0,0,text.tofloat());
+			break;
+		}
 		case "undoobj":
 		{
 			if(plr.AdminLevel != 3) return 0;

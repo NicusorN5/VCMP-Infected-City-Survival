@@ -175,3 +175,173 @@ Loaded plugin: announce04rel32
 Loaded plugin: squirrel04rel32
 
 Unable to start server on host:  port: 8192. Port in use?
+
+ Vice City Multiplayer Server
+ -------------------------------
+ v0.4, (c) 2007-2014 VC:MP Team
+
+Loaded plugin: announce04rel32
+
+Loaded plugin: squirrel04rel32
+
+Unable to start server on host:  port: 8192. Port in use?
+
+ Vice City Multiplayer Server
+ -------------------------------
+ v0.4, (c) 2007-2014 VC:MP Team
+
+Loaded plugin: announce04rel32
+
+Loaded plugin: squirrel04rel32
+
+Unable to start server on host:  port: 8192. Port in use?
+
+ Vice City Multiplayer Server
+ -------------------------------
+ v0.4, (c) 2007-2014 VC:MP Team
+
+Loaded plugin: announce04rel32
+
+Loaded plugin: squirrel04rel32
+
+Unable to start server on host:  port: 8192. Port in use?
+
+ Vice City Multiplayer Server
+ -------------------------------
+ v0.4, (c) 2007-2014 VC:MP Team
+
+Loaded plugin: announce04rel32
+
+Loaded plugin: squirrel04rel32
+
+Unable to start server on host:  port: 8192. Port in use?
+
+ Vice City Multiplayer Server
+ -------------------------------
+ v0.4, (c) 2007-2014 VC:MP Team
+
+Loaded plugin: announce04rel32
+
+Loaded plugin: squirrel04rel32
+
+Unable to start server on host:  port: 8192. Port in use?
+
+ Vice City Multiplayer Server
+ -------------------------------
+ v0.4, (c) 2007-2014 VC:MP Team
+
+Loaded plugin: announce04rel32
+
+Loaded plugin: squirrel04rel32
+
+Unable to start server on host:  port: 8192. Port in use?
+
+ Vice City Multiplayer Server
+ -------------------------------
+ v0.4, (c) 2007-2014 VC:MP Team
+
+Loaded plugin: announce04rel32
+
+Loaded plugin: squirrel04rel32
+
+Unable to start server on host:  port: 8192. Port in use?
+
+ Vice City Multiplayer Server
+ -------------------------------
+ v0.4, (c) 2007-2014 VC:MP Team
+
+Loaded plugin: announce04rel32
+
+Loaded plugin: squirrel04rel32
+
+Unable to start server on host:  port: 8192. Port in use?
+
+ Vice City Multiplayer Server
+ -------------------------------
+ v0.4, (c) 2007-2014 VC:MP Team
+
+Loaded plugin: announce04rel32
+
+Loaded plugin: squirrel04rel32
+
+Unable to start server on host:  port: 8192. Port in use?
+
+ Vice City Multiplayer Server
+ -------------------------------
+ v0.4, (c) 2007-2014 VC:MP Team
+
+Loaded plugin: announce04rel32
+
+Loaded plugin: squirrel04rel32
+
+Unable to start server on host:  port: 8192. Port in use?
+
+ Vice City Multiplayer Server
+ -------------------------------
+ v0.4, (c) 2007-2014 VC:MP Team
+
+Loaded plugin: announce04rel32
+
+Loaded plugin: squirrel04rel32
+
+Unable to start server on host:  port: 8192. Port in use?
+
+ Vice City Multiplayer Server
+ -------------------------------
+ v0.4, (c) 2007-2014 VC:MP Team
+
+Loaded plugin: announce04rel32
+
+Loaded plugin: squirrel04rel32
+
+Unable to start server on host:  port: 8192. Port in use?
+
+ Vice City Multiplayer Server
+ -------------------------------
+ v0.4, (c) 2007-2014 VC:MP Team
+
+Loaded plugin: announce04rel32
+
+Loaded plugin: squirrel04rel32
+
+Unable to start server on host:  port: 8192. Port in use?
+
+ Vice City Multiplayer Server
+ -------------------------------
+ v0.4, (c) 2007-2014 VC:MP Team
+
+Loaded plugin: announce04rel32
+
+Loaded plugin: squirrel04rel32
+
+Unable to start server on host:  port: 8192. Port in use?
+
+ Vice City Multiplayer Server
+ -------------------------------
+ v0.4, (c) 2007-2014 VC:MP Team
+
+Loaded plugin: announce04rel32
+
+Loaded plugin: squirrel04rel32
+
+Unable to start server on host:  port: 8192. Port in use?
+
+ Vice City Multiplayer Server
+ -------------------------------
+ v0.4, (c) 2007-2014 VC:MP Team
+
+Loaded plugin: announce04rel32
+
+Loaded plugin: squirrel04rel32
+
+Unable to start server on host:  port: 8192. Port in use?
+
+ Vice City Multiplayer Server
+ -------------------------------
+ v0.4, (c) 2007-2014 VC:MP Team
+
+Loaded plugin: announce04rel32
+
+Loaded plugin: squirrel04rel32
+
+Unable to start server on host:  port: 8192. Port in use?

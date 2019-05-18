@@ -4,6 +4,9 @@ dofile(MAP_FILE,true);
 try
 {
 	Map();
+	if(!FindObject(0)) CreateObject(408,100,Vector(0,0,0),0);
+	if(!FindPickup(0)) CreatePickup(408,100,1,Vector(0,0,0),0,true);
+	if(!FindCheckpoint(0)) CreateCheckpoint(null,100,false,Vector(0,0,0),ARGB(255,255,255,255),2);
 }
 catch(e) 
 {
@@ -84,7 +87,7 @@ function CreateMapItem(type,player,...)
 			local c3 = vargv[2];
 			local r = vargv[4];
 			if(vargv[4] == null) return -3; 
-			local obj = CreatePickup(model,player.World,true,player.Pos,ARGB(c1,c2,c3,c4),r);
+			local obj = CreateCheckpoint(null,player.World,true,player.Pos,ARGB(255,c1,c2,c3),r);
 			local ID = obj.ID;
 			if(!ID) return 0; // Unkonwn error.
 			MAP_EDIT_OBJECTID = ID;
@@ -171,28 +174,31 @@ function UndoMapItem()
 function SaveMap()
 {
 	system("del "+MAP_FILE);
-	for(local i =0 ; i < 3000;i++)
+	TXTAddLine(MAP_FILE,"//Created with Athanato's map editor.");
+	TXTAddLine(MAP_FILE,"function Map() {");
+	for(local i =1 ; i < 3000;i++)
 	{
 		local o = FindObject(i);
 		if(o) {
-			TXTAddLine("CreateObject("+o.Model+","+o.World+",Vector"+o.Pos+","+o.Alpha+");");
+			TXTAddLine(MAP_FILE,"CreateObject("+o.Model+","+o.World+",Vector"+o.Pos+","+o.Alpha+");");
 		}
 	}
-	for(local i =0 ; i < 2000;i++)
+	for(local i =1 ; i < 2000;i++)
 	{
 		local p = FindPickup(i);
-		if(p) TXTAddLine("CreatePickup("+p.Model+","+p.World+","+p.Quantity+",Vector"+p.Pos+","+p.Alpha+",true);");
+		if(p) TXTAddLine(MAP_FILE,"CreatePickup("+p.Model+","+p.World+","+p.Quantity+",Vector"+p.Pos+","+p.Alpha+",true);");
 	}
-	for(local i =0 ; i < 2000;i++)
+	for(local i =1 ; i < 2000;i++)
 	{
 		local c = FindCheckpoint(i);
-		if(c) TXTAddLine("CreateCheckpoint(null,"+c.World+",true,Vector"+c.Pos+","+c.Color+","+c.Radius+",true);");
+		if(c) TXTAddLine(MAP_FILE,"CreateCheckpoint(null,"+c.World+",true,Vector"+c.Pos+",ARGB(255,"+c.Color.r+","+c.Color.g+","+c.Color.b+")"+c.Radius+");");
 	}
 	for(local i =0 ; i < 1000; i++)
 	{
 		local v = FindVehicle(i);
-		if(v) TXTAddLine("CreateVehicle("+v.Model+","+v.World+",Vector"+v.Pos+",0,"+v.Colour1+","+v.Colour2+");");
+		if(v) TXTAddLine(MAP_FILE,"CreateVehicle("+v.Model+","+v.World+",Vector"+v.Pos+",0,"+v.Colour1+","+v.Colour2+");");
 	}
+	TXTAddLine(MAP_FILE,"}");
 }
 function TXTAddLine(filename, text)
 {
