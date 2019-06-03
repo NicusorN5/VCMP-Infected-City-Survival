@@ -345,3 +345,233 @@ Loaded plugin: announce04rel32
 Loaded plugin: squirrel04rel32
 
 Unable to start server on host:  port: 8192. Port in use?
+
+ Vice City Multiplayer Server
+ -------------------------------
+ v0.4, (c) 2007-2014 VC:MP Team
+
+Loaded plugin: announce04rel32
+
+Loaded plugin: squirrel04rel32
+
+Unable to start server on host:  port: 8192. Port in use?
+
+ Vice City Multiplayer Server
+ -------------------------------
+ v0.4, (c) 2007-2014 VC:MP Team
+
+Loaded plugin: announce04rel32
+
+Loaded plugin: squirrel04rel32
+
+Unable to start server on host:  port: 8192. Port in use?
+
+ Vice City Multiplayer Server
+ -------------------------------
+ v0.4, (c) 2007-2014 VC:MP Team
+
+Loaded plugin: announce04rel32
+
+Loaded plugin: squirrel04rel32
+
+Unable to start server on host:  port: 8192. Port in use?
+
+ Vice City Multiplayer Server
+ -------------------------------
+ v0.4, (c) 2007-2014 VC:MP Team
+
+Loaded plugin: announce04rel32
+
+Loaded plugin: squirrel04rel32
+
+Unable to start server on host:  port: 8192. Port in use?
+[MODULE]  Loaded SqVCMP 0.4 frontend by Stormeus. (v1.0)
+[SCRIPT]  Athanatos: auzi
+[SCRIPT]  Athanatos: spawneazate
+[SCRIPT]  Athanatos: ca unu in costum negru
+[SCRIPT]  AlecuMadalin32: oops 
+[SCRIPT]  AlecuMadalin32: nu-s in costum negru
+[SCRIPT]  Athanatos: NIGGA
+[SCRIPT]  AlecuMadalin32: scz
+[SCRIPT]  Athanatos: hai ca merg mesajele la armele custom
+[SCRIPT]  Athanatos: e fain acr ul?
+[SCRIPT]  AlecuMadalin32: da
+[SCRIPT]  Athanatos: e arma mea poreferata
+[SCRIPT]  Athanatos: xd
+[SCRIPT]  Athanatos: preferata*
+[SCRIPT]  AlecuMadalin32: am am 1 viata
+[SCRIPT]  Athanatos: e op sau sunt noob?
+[SCRIPT]  AlecuMadalin32: op?
+[SCRIPT]  AlecuMadalin32: cum adica
+[SCRIPT]  Athanatos: overpowered
+[SCRIPT]  AlecuMadalin32: credca esti noob
+[SCRIPT]  AlecuMadalin32: si sa stii ca nu folosesc niciun hack
+[SCRIPT]  Athanatos: ba
+[SCRIPT]  Athanatos: cand tintesc
+[SCRIPT]  AlecuMadalin32: ?
+[SCRIPT]  Athanatos: ori e prea dreapta
+[SCRIPT]  Athanatos: sau prea stanga
+[SCRIPT]  Athanatos: :(\
+[SCRIPT]  Athanatos: ai vazut
+[SCRIPT]  Athanatos: ?
+[SCRIPT]  Athanatos: XD
+[SCRIPT]  AlecuMadalin32: DA XD
+[SCRIPT]  Athanatos: medic?
+[SCRIPT]  AlecuMadalin32: am vrut sa vad ce pusti primesti la medic
+[SCRIPT]  AlecuMadalin32: fututi
+[SCRIPT]  AlecuMadalin32: wtf xD
+[SCRIPT]  AlecuMadalin32: imi place ce sunete scoate argul ala
+[SCRIPT]  Athanatos: acr
+[SCRIPT]  AlecuMadalin32: da noi ce testam?
+[SCRIPT]  Athanatos: faceam dm acuma
+[SCRIPT]  Athanatos: xd
+[SCRIPT]  Athanatos: testam mesajele de kill
+[SCRIPT]  AlecuMadalin32: uite merg
+[SCRIPT]  Athanatos: da
+[SCRIPT]  Athanatos: xdd
+[SCRIPT]  Athanatos: vrei sa bag
+[SCRIPT]  Athanatos: cand mori
+[SCRIPT]  Athanatos: sa iti
+[SCRIPT]  Athanatos: nvm
+[SCRIPT]  Athanatos: ideea era sa iti dropeze iventoria
+[SCRIPT]  AlecuMadalin32: si n-ai puso in aplicare
+[SCRIPT]  Athanatos: da
+[SCRIPT]  Athanatos: xd
+[SCRIPT]  Athanatos: auzi
+[SCRIPT]  Athanatos: idee faina
+[SCRIPT]  Athanatos: ce zici 
+[SCRIPT]  AlecuMadalin32: ia sa aud
+[SCRIPT]  Athanatos: sa bag 
+[SCRIPT]  Athanatos: hitmarkere
+[SCRIPT]  Athanatos: cand ai tintit bine
+[SCRIPT]  AlecuMadalin32: ce-s alea?
+[SCRIPT]  Athanatos: sa iti apata
+[SCRIPT]  Athanatos: apara
+[SCRIPT]  Athanatos: un x in mijlocul ecranului
+[SCRIPT]  AlecuMadalin32: si cei cu xul ala
+[SCRIPT]  AlecuMadalin32: sa stii ca eu sunt la rompetrol
+[SCRIPT]  Athanatos: lol
+[SCRIPT]  Athanatos: oricum
+[SCRIPT]  Athanatos: ii mai trebuie masini
+[SCRIPT]  Athanatos: si e functional ca un server de asta de dm
+[SCRIPT]  AlecuMadalin32: n-ai zis tu ca vei face altceva inafara de dm si rpg
+[SCRIPT]  Athanatos: pai nu ai citit numele serverului?
+[SCRIPT]  Athanatos: XDD
+[SCRIPT]  AlecuMadalin32: am citit xDDDDDD
+[SCRIPT]  AlecuMadalin32: ai uitat zombalai
+[SCRIPT]  Athanatos: nu sunt deloc bagati
+[SCRIPT]  Athanatos: :D
+[SCRIPT]  AlecuMadalin32: adica
+[SCRIPT]  AlecuMadalin32: masini poti sa iei de pe gta mamaia
+[SCRIPT]  Athanatos: bruh
+[SCRIPT]  Athanatos: nu trebuie masini custom
+[SCRIPT]  AlecuMadalin32: oh
+[SCRIPT]  AlecuMadalin32: n-am citi bn
+[SCRIPT]  AlecuMadalin32: n-am citit bn
+[SCRIPT]  AlecuMadalin32: cand scriu /cmds imi da asta [#ff0000]Invalid command! See /cmds.
+[SCRIPT]  Athanatos: mda
+[SCRIPT]  Athanatos: ai /help
+[SCRIPT]  Athanatos: ai /help
+[SCRIPT]  Athanatos: ai /help
+[SCRIPT]  Athanatos: ai /help
+[SCRIPT]  Athanatos: ai /help
+[SCRIPT]  Athanatos: ai /help
+[SCRIPT]  AlecuMadalin32: dc ai mai pus /cmds
+[SCRIPT]  Athanatos: fiindca o sa bag /cmds
+[SCRIPT]  AlecuMadalin32: ce inseamna implementat?
+[SCRIPT]  Athanatos: a fii bagat
+[SCRIPT]  AlecuMadalin32: in cur
+[SCRIPT]  Athanatos: nah
+[SCRIPT]  AlecuMadalin32: lol
+[SCRIPT]  Athanatos: l;mfao
+[SCRIPT]  Athanatos: xd
+[SCRIPT]  Athanatos: ms ca  miam amintit
+[SCRIPT]  Athanatos: sa bag mesajele cand te omori
+[SCRIPT]  AlecuMadalin32: nea alecu sa omorat cu berbecu
+[SCRIPT]  AlecuMadalin32: oops mi so blocat programele
+[SCRIPT]  AlecuMadalin32: revin imediat
+
+AN ERROR HAS OCCURED [Member Variable not found]
+
+CALLSTACK
+*FUNCTION [CleanMap()] scripts/map_editor.nut line [41]
+*FUNCTION [LoadMap()] scripts/map_editor.nu
+ Vice City Multiplayer Server
+ -------------------------------
+ v0.4, (c) 2007-2014 VC:MP Team
+
+Loaded plugin: announce04rel32
+
+Loaded plugin: squirrel04rel32
+
+Unable to start server on host:  port: 8192. Port in use?
+
+ Vice City Multiplayer Server
+ -------------------------------
+ v0.4, (c) 2007-2014 VC:MP Team
+
+Loaded plugin: announce04rel32
+
+Loaded plugin: squirrel04rel32
+
+Unable to start server on host:  port: 8192. Port in use?
+
+ Vice City Multiplayer Server
+ -------------------------------
+ v0.4, (c) 2007-2014 VC:MP Team
+
+Loaded plugin: announce04rel32
+
+Loaded plugin: squirrel04rel32
+
+Unable to start server on host:  port: 8192. Port in use?
+
+ Vice City Multiplayer Server
+ -------------------------------
+ v0.4, (c) 2007-2014 VC:MP Team
+
+Loaded plugin: announce04rel32
+
+Loaded plugin: squirrel04rel32
+
+Unable to start server on host:  port: 8192. Port in use?
+
+ Vice City Multiplayer Server
+ -------------------------------
+ v0.4, (c) 2007-2014 VC:MP Team
+
+Loaded plugin: announce04rel32
+
+Loaded plugin: squirrel04rel32
+
+Unable to start server on host:  port: 8192. Port in use?
+
+ Vice City Multiplayer Server
+ -------------------------------
+ v0.4, (c) 2007-2014 VC:MP Team
+
+Loaded plugin: announce04rel32
+
+Loaded plugin: squirrel04rel32
+
+Unable to start server on host:  port: 8192. Port in use?
+
+ Vice City Multiplayer Server
+ -------------------------------
+ v0.4, (c) 2007-2014 VC:MP Team
+
+Loaded plugin: announce04rel32
+
+Loaded plugin: squirrel04rel32
+
+Unable to start server on host:  port: 8192. Port in use?
+
+ Vice City Multiplayer Server
+ -------------------------------
+ v0.4, (c) 2007-2014 VC:MP Team
+
+Loaded plugin: announce04rel32
+
+Loaded plugin: squirrel04rel32
+
+Unable to start server on host:  port: 8192. Port in use?

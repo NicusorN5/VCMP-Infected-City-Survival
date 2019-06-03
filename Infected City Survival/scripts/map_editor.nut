@@ -38,7 +38,7 @@ function CleanMap()
 		if(FindObject(i)) FindObject(i).Delete();
 		if(FindPickup(i)) FindPickup(i).Remove();
 		if(FindVehicle(i)) FindVehicle(i).Delete();
-		if(FindCheckpoint(i)) FindCheckpoint(i).Delete();
+		if(FindCheckpoint(i)) FindCheckpoint(i).Remove();
 		DestroyMarker(i);
 	}
 }
@@ -196,7 +196,7 @@ function SaveMap()
 	for(local i =0 ; i < 1000; i++)
 	{
 		local v = FindVehicle(i);
-		if(v) TXTAddLine(MAP_FILE,"CreateVehicle("+v.Model+","+v.World+",Vector"+v.Pos+",0,"+v.Colour1+","+v.Colour2+");");
+		if(v) TXTAddLine(MAP_FILE,"CreateVehicle("+v.Model+","+v.World+",Vector"+v.Pos+",0,"+v.Colour1+","+v.Colour2+").Angle = Quaternion("+v.Angle.x+","+v.Angle.y+","+v.Angle.z+","+v.Angle.w+");");
 	}
 	TXTAddLine(MAP_FILE,"}");
 }

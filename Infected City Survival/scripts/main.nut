@@ -32,7 +32,7 @@ function onScriptLoad()
 	SetPassword("development_test");
 	SetShowOnlyTeamMarkers(true);
 	SetShootInAir(true);
-	SetWallglitch(true);
+	SetWallglitch(false);
 	AddClass( 1, RGB(255,255,255), 15, Vector(-1511.19, -930.191, 20.8823), 0, 17, 170 ,0, 0, 0, 0 );
 	AddClass( 2, RGB(0,0,255), 5, Vector(-884.438, -469.758, 13.1103), 0, 100, 1 ,0, 0, 0, 0);
 	AddClass( 3, RGB(0,255,0), 4, Vector(-1742.84, -295.27, 29.7525), 0, 26, 330 ,25, 330, 18, 42 );
@@ -46,7 +46,6 @@ function onScriptLoad()
 			onPlayerJoin(FindPlayer(i));
 		}
 	}
-	//TODO: Password, load map, and store data.
 }
 
 function onScriptUnload()
@@ -62,16 +61,32 @@ function onPlayerJoin( player )
 	{
 		PLAYERS[player.ID].AdminLevel = 3;
 	}
+	Message(WHITE+"Welcome "+player+" to "+RED+"INFECTED "+);
+	MessagePlayer(WHITE+"Have fun!",player);
 }
 
 function onPlayerPart( player, reason )
 {
+	local reas = "";
+	switch(reason)
+	{
+		case 0 : reas = "[Timeout]"; break;
+		case 1 : reas = "[Quit]"; break;
+		case 2 : reas = "[Kick/Ban]"; break;
+		case 3 : reas = "[Crash]"; break;
+		default: reas = "[Unknown]"; break;
+	}
 	PLAYERS[player.ID].SaveStats();
 	PLAYERS[player.ID] = null;
+	Message(WHITE+player+" left"+reas);
 }
 
 function onPlayerRequestClass( player, classID, team, skin )
 {
+	if(team == 1) Announce("Civillan",player,1);
+	if(team == 2) Announce("~b~Medic",player,1);
+	if(team == 3) Announce("~t~Soldier",player,1);
+	if(team == 4) Announce("~o~Unkown Organisation Agent",player,1);
 	return 1;
 }
 
@@ -86,14 +101,29 @@ function onPlayerSpawn( player )
 
 function onPlayerDeath( player, reason )
 {
+	local reas = "";
+	switch(reason)
+	{
+		case 44: reas += "felt down" ; break;
+		case 41: reas += "blew up"; break;
+		case 43: reas += "drowned"; break;
+		case 39: reas += "had a car accident"; break;
+		case 70: reas += "comitted suicide"; break;
+		case 14: reas += "suffocated"; break;
+		case 31: reas += "burnt alive"; break;
+		default: Message(reason+""); break;
+	}
+	Message(RED+player+" "+reas+".");
 }
 
 function onPlayerKill( player, killer, reason, bodypart )
 {
+	Message(RED+player+" killed "+killer+" using "+WHITE+GetWep(reason));
 }
 
 function onPlayerTeamKill( player, killer, reason, bodypart )
 {
+	onPlayerKill( player, killer, reason, bodypart );
 }
 
 function onPlayerChat( player, text )
