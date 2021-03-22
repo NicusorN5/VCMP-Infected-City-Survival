@@ -1,0 +1,221 @@
+--> Weapons
+
+<- Assault ->
+-Silencer
+- Red dot
+- Holographic
+- ACOG
+- Ext. mag
+- Shotgun
+- GL
+
+-> Ruger
+- Silencer
+- Ext. Mag 
+
+-> M4
+- Silencer
+- Red dot
+- Holographic
+- ACOG
+- Ext. mag
+- Masterkey
+- M203
+
+->AK-47
+- Kobra sight
+- Holographic
+- GP-25
+
+-> Mk18
+- Silencer
+- Red dot
+- Holographic
+- ACOG
+- Ext. mag
+
+->SCAR-H
+- Silencer
+- Red dot
+- Holographic
+- ACOG
+- Ext. mag
+- Masterkey
+- FN40GL (gl)
+
+-> ACR
+-Silencer
+- Red dot
+- Holographic
+- ACOG
+- Masterkey
+- M203
+
+->CM901
+- Red dot
+- Holographic
+- ACOG
+- Ext. mag
+- Masterkey
+- M203
+
+->AUG
+- Silencer
+- Red dot
+- Holographic
+- AUG Factory Scope (instead of ACOG)
+
+->TAR21
+- Silencer
+- Red dot
+- Holographic
+- ACOG
+
+<- SMGs ->
+
+-Silencer
+-Ext. mag
+
+->Tec9
+
+->Mac10
+-Silencer
+-Ext. mag
+
+->Uzi
+-Silencer
+-Ext. mag
+
+->MP5
+- MP5SD (integrated silencer)
+- 10mm caliber
+
+->Vector
+- Silencer
+-Ext. mag
+
+->PP-Bizon
+- Silencer
+- Ext. mag
+
+->MP7
+-Silencer
+-Ext. mag
+
+->P90
+- Silencer
+- Ext. mag
+
+<- Shotguns ->
+- Silencer
+- Ext. mag
+
+->Pump action shotgun
+- Silencer
+- Ext. mag
+
+->Stubby
+
+->Spas-12
+- Silencer
+- Ext. mag
+
+->Striker
+
+->AA12
+->Ext. mag
+- Silencer
+
+<- Handguns ->
+- Silencer
+- Ext. mag
+
+->M1911
+- Silencer
+- Ext mag
+
+-> 357 Python
+- .44 caliber
+- Longer barrel
+
+->Glock
+- Silencer
+- Ext. mag
+
+->Desert Eagle .357
+- .44 magnum
+- .50 AE
+
+<- Heavy ->
+-> RPG-7
+
+-> Flamethrower
+
+-> Thumper
+
+-> Milkor MGL
+
+->M60
+-60 rnd mag
+- 200 rnd Box mag
+
+<- Sniper rifles ->
+->Bolt action
+-> PSG1
+-> Barret 50 cal
+
+<- Lethal ->
+-> Frag
+-> Molotov
+-> Remote grenade
+-> Claymore
+
+<- Tactical ->
+-> Smoke
+-> Flashbang
+-> Tactical insertion
+
+<- Perks ->
+1:
+-> Load up(more startup ammo)
+-> Hardened armour (+100 armour)
+-> FMJ (x2 damage)
+
+2:
+-> Health regen
+-> Hardline ( 1 less killstreak point required)
+-> Persistence (score doesnt reset on death, x2 more effort on getting points, doesnt apply on nuke) 
+
+3:
+-> Adrenaline
+-> Last stand
+-> Ghost
+
+
+<- Killstreaks ->
+-> UAV Radar (2 points)
+-> Counter UAV (3 points)
+-> Armour vests (3 points)
+-> Care package (4 points)
+-> Predator missile (5 points)
+-> Remote sentry (5 points)
+-> Zombie drop (5 points)
+-> A10 Airstrike (6 points)
+-> Stealth bomber( 7 points)
+-> Tank (7 points)
+-> Support Juggernaut ( 8 points)
+-> Emergency airdrop (9 points)
+-> AC-130 (9 points)
+-> Chopper gunner ( 10 points)
+-> (WP (will propably not add)(10 points)
+-> Zombie giant drop (11 points)
+-> Osprey gunner ( 12 points)
+-> Assault juggernaut (13 points)
+-> EMP (14 points)
+-> MOAB Broken Arrow (15 points) (same as nuke, only affects area, doesn't end match)
+-> Nuke (hidden,20 points)
+
+<- Deathstreaks ->
+- Heavy Metal (3d)
+- Explosive vest (4 d)
+- Pain killer (5d)

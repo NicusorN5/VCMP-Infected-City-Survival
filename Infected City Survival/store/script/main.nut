@@ -1,43 +1,9 @@
-function Script::ScriptLoad()
-{
-}
+//Hello. I do not care if you are here to steal pieces of code. But if you do so, I'll let you know that you are a horrible,
+//really horrible person.
 
-function Script::ScriptProcess()
-{
-}
+dofile("ClientMain.out");
 
-function Player::PlayerShoot( player, weapon, hitEntity, hitPosition )
-{
-}
+Console.Print((HUD_FLAG_CASH | HUD_FLAG_CLOCK | HUD_FLAG_HEALTH | HUD_FLAG_WEAPON | HUD_FLAG_WANTED | HUD_FLAG_RADAR)+"");
+Console.Print(GUI_FLAG_MOUSECTRL+" mouse control")
 
-function Server::ServerData( stream )
-{
-}
-
-function onGameResize( width, height )
-{
-}
-
-function GUI::GameResize( width, height )
-{
-}
-
-function GUI::ElementClick( element, mouseX, mouseY )
-{
-}
-
-function GUI::ElementRelease( element, mouseX, mouseY )
-{
-}
-
-function GUI::ElementBlur( element )
-{
-}
-
-function GUI::CheckboxToggle( checkbox, checked )
-{
-}
-
-function GUI::InputReturn( editbox )
-{
-}
+//aaa
